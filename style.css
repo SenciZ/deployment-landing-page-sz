@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a{
@@ -34,22 +35,46 @@ body{
     border-radius:15px;
     padding: 5px;
     min-width: 70px;
+    font-size: .75rem;
     border: hidden;
     margin-right: 10px;
 }
 
+#seeSpecs, #whyMac, #overview{
+    background-color: transparent;
+    color: darkgray;
+    border-radius:15px;
+    padding: 5px;
+    min-width: 70px;
+    font-size: .75rem;
+    border: hidden;
+    margin-right: 10px;
+}
 
+#expand{
+    display: none;
+}
+
+#overview:hover{
+    color: rgb(60, 63, 255);
+    cursor: pointer;
+}
 
 #seeSpecs:hover{
-    color: rgb(134, 134, 134);
+    color: rgb(24, 20, 255);
+    cursor: pointer;
+}
+#whyMac:hover{
+    color: rgb(24, 20, 255);
     cursor: pointer;
 }
 
 #buyNow{
     color: rgb(255, 255, 255);
     border-radius:15px;
-    padding: 5px;
-    min-width: 70px;
+    padding: 3px;
+    min-width: 50px;
+    font-size: .75rem;
     background-color: #0071e3;
     border: hidden;
     margin-left: 10px;
@@ -60,20 +85,36 @@ body{
     background-color: #147ce5;
 }
 
-#navBar{
+#buyButtonBar{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     position: relative;
-    top: 30px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
 }
+
+#barWidth{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 #imageContainer{
-    position: relative;
+    /* position: relative; */
     top: -100px;
     z-index: -100;
-    width: 100%,
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+}
+#laptop{
+    width: 80%;
+    position: relative;
+    top: -150px;
 }
 
 #info{
@@ -91,6 +132,10 @@ body{
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+#laptop{
+    max-width: 100%;
+}
+
 #paraText{
     margin-top: 30px;
     margin-bottom: 50px;
@@ -101,11 +146,13 @@ body{
 
 #newNav{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(26, 29, 29);
     height: 45px;
     width: 100%;
+    padding-right: 370px;
+    padding-left: 370px;
 }
 
 .links{
@@ -113,6 +160,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
 
 li{
@@ -120,7 +168,7 @@ li{
     color: rgb(194, 194, 194);
     margin-left: 20px;
     list-style: none;
-    min-width: 70px;
+    min-width: 80px;
 }
 
 li:hover{
@@ -128,10 +176,21 @@ li:hover{
 
 }
 
+#smallGrayText{
+    font-size: .8rem;
+    color: rgb(161, 161, 161);
+}
+
+#proText{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
 #appleLogo{
     height: 40%;
     width: auto;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #hamburger{
@@ -142,12 +201,11 @@ li:hover{
 }
 #briefcase{
     color: rgb(194, 194, 194);
-    margin-right: 15px;
     cursor: pointer;
+    margin-left: 25px;
 }
 #search{
     color: rgb(194, 194, 194);
-    margin-right: 15px;
     cursor: pointer;
 }
 
@@ -156,22 +214,47 @@ li:hover{
     #imageContainer{
         display: flex;
         position: relative;
-        top: -100px;
+        top: 80px;
         z-index: -100;
-        width: 90%;
+        width: 95%;
         justify-content: center;
     }
+    #expand{
+        display: inherit;
+        display: inline;
+    }
 
+    #barWidth{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; 
+    }
     #search{
         display: none;
     }
-
+    #laptop{
+        max-width: 100%;
+    }
+    #randoDiv{
+        display: flex;
+    }
     #newNav{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+
+    #seeSpecs, #whyMac, #overview{
+        display: none;
     }
 
     .links{
+        display: none;
+        width: 100%;
+    }
+    #search{
         display: none;
     }
 
@@ -194,6 +277,7 @@ li:hover{
         color: rgb(194, 194, 194);
         margin-right: 15px;
         cursor: pointer;
+        margin-left: none;
     }
 
     img{
