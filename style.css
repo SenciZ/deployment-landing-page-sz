@@ -1,3 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
 *{
-    color: red;
+    color: rgb(53, 53, 53);
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('./images/hero_intro_endframe__e6khcva4hkeq_large.jpeg'); */
+    /* background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; */
+}
+
+#pageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 80vh;
+    background-image: url('./images/hero_intro_endframe__e6khcva4hkeq_large.jpeg');
+    background-size: 80%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#seeSpecs{
+    background-color: transparent;
+    color: darkgray;
+    border-radius:15px;
+    padding: 5px;
+    min-width: 70px;
+    border: hidden;
+    margin-right: 10px;
+}
+
+#seeSpecs:hover{
+    color: rgb(134, 134, 134);
+
+}
+
+#buyNow{
+    color: rgb(255, 255, 255);
+    border-radius:15px;
+    padding: 5px;
+    min-width: 70px;
+    background-color: #0071e3;
+    border: hidden;
+    margin-left: 10px;
+}
+
+#buyNow:hover{
+    background-color: #147ce5;
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+#superchargedText{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#paraText{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
