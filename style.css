@@ -12,7 +12,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
 }
 
 #pageContainer{
@@ -20,7 +19,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -95,3 +93,27 @@ body{
     font-size: 1.5rem;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+
+@media only screen and (max-width: 900px) {
+    #imageContainer{
+        display: flex;
+        position: relative;
+        top: -100px;
+        z-index: -100;
+        width: 90%;
+        justify-content: center;
+    }
+
+    img{
+        width: 95%;
+        margin-top: 100px;
+    }
+
+    #superchargedText{
+        font-size: 4rem;
+    }
+
+    #info{
+        width: 80%;
+    }
+  }
