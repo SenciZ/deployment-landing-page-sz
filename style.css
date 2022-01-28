@@ -1,343 +1,366 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
-*{
-    color: rgb(53, 53, 53);
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    box-sizing: border-box;
-    max-width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap");
+* {
+  color: rgb(53, 53, 53);
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
-a{
-    color:inherit;
+a {
+  color: inherit;
 }
 
-body{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#pageContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-position: top;
-    background-repeat: no-repeat;
+#pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
-#seeSpecs{
-    background-color: transparent;
-    color: darkgray;
-    border-radius:15px;
-    padding: 5px;
-    min-width: 70px;
-    font-size: .75rem;
-    border: hidden;
-    margin-right: 10px;
+#seeSpecs {
+  background-color: transparent;
+  color: darkgray;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 70px;
+  font-size: 0.75rem;
+  border: hidden;
+  margin-right: 10px;
 }
 
-#seeSpecs, #whyMac, #overview{
-    background-color: transparent;
-    color: darkgray;
-    border-radius:15px;
-    padding: 5px;
-    min-width: 70px;
-    font-size: .75rem;
-    border: hidden;
-    margin-right: 10px;
+#seeSpecs,
+#whyMac,
+#overview {
+  background-color: transparent;
+  color: darkgray;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 70px;
+  font-size: 0.75rem;
+  border: hidden;
+  margin-right: 10px;
 }
 
-#expand{
-    display: none;
+#expand {
+  display: none;
 }
 
-#overview:hover{
-    color: rgb(60, 63, 255);
-    cursor: pointer;
+#overview:hover {
+  color: rgb(60, 63, 255);
+  cursor: pointer;
 }
 
-#seeSpecs:hover{
-    color: rgb(24, 20, 255);
-    cursor: pointer;
+#seeSpecs:hover {
+  color: rgb(24, 20, 255);
+  cursor: pointer;
 }
-#whyMac:hover{
-    color: rgb(24, 20, 255);
-    cursor: pointer;
-}
-
-#buyNow{
-    color: rgb(255, 255, 255);
-    border-radius:15px;
-    padding: 3px;
-    min-width: 50px;
-    font-size: .75rem;
-    background-color: #0071e3;
-    border: hidden;
-    margin-left: 10px;
-    cursor: pointer;
+#whyMac:hover {
+  color: rgb(24, 20, 255);
+  cursor: pointer;
 }
 
-#buyNow:hover{
-    background-color: #147ce5;
+#buyNow {
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 3px;
+  min-width: 50px;
+  font-size: 0.75rem;
+  background-color: #0071e3;
+  border: hidden;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-#buyButtonBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 8vh;
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid lightgray;
+#buyNow:hover {
+  background-color: #147ce5;
 }
 
-#barWidth{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+#buyButtonBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 8vh;
+  position: relative;
+  min-width: 100%;
+  border-bottom: 1px solid lightgray;
 }
 
-#imageContainer{
-    /* position: relative; */
-    top: -100px;
-    z-index: -100;
-    width: 100vw !important;
-    display: flex;
-    justify-content: center;
-}
-#laptop{
-    width: 80%;
-    position: relative;
-    top: -150px;
+#barWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1200px;
+  width: 80%;
 }
 
-#info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 70%;
+#imageContainer {
+  /* position: relative; */
+  top: -100px;
+  z-index: -100;
+  width: 100vw !important;
+  display: flex;
+  justify-content: center;
+}
+#laptop {
+  width: 80%;
+  position: relative;
+  top: -150px;
 }
 
-#superchargedText{
-    text-align: center;
-    width: 100%;
-    font-size: 6vw;
-    font-weight: 500;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
 }
 
-#laptop{
-    max-width: 100%;
+#superchargedText {
+  text-align: center;
+  width: 100%;
+  font-size: 6vw;
+  font-weight: 500;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
 
-#paraText{
-    margin-top: 30px;
-    margin-bottom: 50px;
-    line-height: 2.25rem;
-    font-size: 1.5vw;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+#laptop {
+  max-width: 100%;
 }
 
-#newNav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(26, 29, 29);
-    height: 45px;
-    width: 100%;
-    /* padding-right: 370px;
+#paraText {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  line-height: 2.25rem;
+  font-size: 1.5vw;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+#newNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(26, 29, 29);
+  height: 45px;
+  width: 100%;
+  /* padding-right: 370px;
     padding-left: 370px; */
 }
 
-.links{
+#newNav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  max-width: 1200px;
+  width: 80%;
+}
+
+#barWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  font-size: 0.7rem;
+  color: rgb(194, 194, 194);
+  margin-left: 20px;
+  list-style: none;
+  min-width: 80px;
+}
+
+li:hover {
+  color: rgb(236, 236, 236);
+}
+
+#smallGrayText {
+  font-size: 0.8rem;
+  color: rgb(161, 161, 161);
+}
+
+#proText {
+  font-weight: 600;
+  font-size: 1.3rem;
+  align-self: flex-start;
+}
+
+#appleLogo {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#hamburger {
+  display: none;
+  color: rgb(194, 194, 194);
+  margin-left: 15px;
+  cursor: pointer;
+}
+#briefcase {
+  color: rgb(194, 194, 194);
+  cursor: pointer;
+  padding-left: 25px;
+}
+#search {
+  color: rgb(194, 194, 194);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+  #imageContainer {
     display: flex;
-    flex-direction: row;
+    position: relative;
+    top: 60px;
+  }
+
+  #barWidth {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #paraText {
+    font-size: 1.75vw;
+  }
+
+  #imageContainer {
+    display: flex;
+    position: relative;
+    top: 30px;
+    z-index: -100;
+    width: 95%;
     justify-content: center;
-    align-items: center;
+  }
+  #expand {
+    display: inherit;
+    display: inline;
+  }
 
-}
+  #barWidth {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
-li{
-    font-size: .7rem;
-    color: rgb(194, 194, 194);
-    margin-left: 20px;
-    list-style: none;
-    min-width: 80px;
-}
-
-li:hover{
-    color: rgb(236, 236, 236);
-
-}
-
-#smallGrayText{
-    font-size: .8rem;
-    color: rgb(161, 161, 161);
-}
-
-#proText{
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-#appleLogo{
-    height: 20px;
-    width: auto;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-#hamburger{
+  #search {
     display: none;
+  }
+  #laptop {
+    max-width: 100%;
+  }
+  #randoDiv {
+    display: flex;
+  }
+  #newNav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #newNav2 {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  #seeSpecs,
+  #whyMac,
+  #overview {
+    display: none;
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+  }
+
+  #hamburger {
+    display: inherit;
     color: rgb(194, 194, 194);
     margin-left: 15px;
     cursor: pointer;
-}
-#briefcase{
+  }
+  #briefcase {
+    display: inherit;
     color: rgb(194, 194, 194);
+    margin-right: 15px;
     cursor: pointer;
-    margin-left: 25px;
-}
-#search{
-    color: rgb(194, 194, 194);
-    cursor: pointer;
-}
-
-
-@media only screen and (max-width: 1600px) {
-    #imageContainer{
-        display: flex;
-        position: relative;
-        top: 60px;
-    }
-
-
-    #barWidth{
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end; 
-    }
-}
-
-
-@media only screen and (max-width: 1200px) {
-    #paraText{
-        font-size: 1.75vw;
-    }
-
-    #imageContainer{
-        display: flex;
-        position: relative;
-        top: 30px;
-        z-index: -100;
-        width: 95%;
-        justify-content: center;
-    }
-    #expand{
-        display: inherit;
-        display: inline;
-    }
-
-    #barWidth{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end; 
-    }
-
-    #search{
-        display: none;
-    }
-    #laptop{
-        max-width: 100%;
-    }
-    #randoDiv{
-        display: flex;
-    }
-    #newNav{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
-    }
-
-    #seeSpecs, #whyMac, #overview{
-        display: none;
-    }
-
-    .links{
-        display: none;
-        width: 100%;
-    }
-    #search{
-        display: none;
-    }
-
-    #appleLogo{
-        display: inherit;
-        height: 40%;
-        width: auto;
-        position: relative;
-        top:-50px;
-        cursor: pointer;
-    }
-    #hamburger{
-        display: inherit;
-        color: rgb(194, 194, 194);
-        margin-left: 15px;
-        cursor: pointer;
-    }
-    #briefcase{
-        display: inherit;
-        color: rgb(194, 194, 194);
-        margin-right: 15px;
-        cursor: pointer;
-        margin-left: none;
-    }
-
-    img{
-        width: 95%;
-        margin-top: 100px;
-    }
-
-    #superchargedText{
-        /* font-size: 3rem; */
-        text-align: center;
-    }
-
-    #info{
-        width: 80%;
-    }
+    margin-left: none !important;
+    padding-left: 0;
   }
 
-  @media only screen and (max-width: 800px) {
+  img {
+    width: 95%;
+    margin-top: 100px;
+  }
 
-    #superchargedText{
-        font-size: 3.5rem;
-        text-align: center;
-    }
-    #paraText{
-        font-size: 4vw;
-    }
+  #appleLogo {
+    display: inherit;
+    height: 40%;
+    width: auto;
+    position: relative;
+    top: -50px;
+    cursor: pointer;
+  }
+
+  #superchargedText {
+    /* font-size: 3rem; */
+    text-align: center;
+  }
+
+  #info {
+    width: 80%;
+  }
 }
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  #superchargedText {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  #paraText {
+    font-size: 4vw;
+  }
+}
 
-    #superchargedText{
-        font-size: 3.5rem;
-        text-align: center;
-    }
-    #paraText{
-        font-size: 4vw;
-    }
+@media only screen and (max-width: 600px) {
+  #superchargedText {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  #paraText {
+    font-size: 4vw;
+  }
 }
