@@ -9,13 +9,14 @@
   max-width: 100%;
 }
 
+
+
 a {
   color: inherit;
 }
 
 body {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -94,7 +95,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 8vh;
-  position: relative;
   min-width: 100%;
   border-bottom: 1px solid lightgray;
 }
@@ -248,6 +248,8 @@ li:hover {
   }
 }
 
+
+
 @media only screen and (max-width: 1200px) {
   #paraText {
     font-size: 1.75vw;
@@ -294,6 +296,8 @@ li:hover {
     margin: 0 auto;
     width: 95%;
   }
+
+
 
   #seeSpecs,
   #whyMac,
@@ -363,4 +367,20 @@ li:hover {
   #paraText {
     font-size: 4vw;
   }
+}
+
+#store-link{
+  position: relative;
+}
+
+#store-submenu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 300%;
+  padding: 1rem;
+  z-index: 100;
+  overflow: show;
 }
